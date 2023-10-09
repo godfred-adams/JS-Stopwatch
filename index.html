@@ -5,12 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stopwatch | App</title>
   <meta name="description" content="A Stopwatch built HTML, CSS and javaScript">
-  <meta name="description" author="Godfred Adams">
   <meta name="keywords" content="Online Stopwatch Application">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h1>Stopwatch ⌚</h1>
+
+  <div class="js-lap-container">
+    <div class="display-lap">
+      <p>Lapped Time(s)</p>
+      <div class="headings">
+        <p>Time</p>
+        <p>Lapped time</p>
+        <p>Overall time</p>
+      </div>
+      <div class="laps">
+        <p class="lapped-time">
+          <span>03</span>
+          <span>00 : 01 .05</span>
+          <span>00 : 02 .97</span>
+        </p>
+
+        <p class="lapped-time">
+          <span>03</span>
+          <span>00 : 01 .05</span>
+          <span>00 : 02 .97</span>
+        </p>
+      </div>
+    </div>
+  </div>
   
   <div class="main-container">
     <div class="js-time time-container">
@@ -20,6 +43,7 @@
     <div class="buttons">
       <button class="js-start-btn">Start</button>
       <button class="js-reset-btn">Reset</button>
+      <button class="js-lap-btn">Show Laps</button>
     </div>
   </div>
 
