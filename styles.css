@@ -143,6 +143,7 @@ button:hover {
   h1 {
     margin: 50px auto;
     width: 320px;
+    padding-top: 10px;
   }
 
   .time-container {
