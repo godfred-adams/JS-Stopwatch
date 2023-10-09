@@ -9,10 +9,6 @@ This sample stopwatch is a project, I gave try after a week of learning JavaScri
 * Continue the timer
 * Reset the timer
 
-# Demo
-
-https://github.com/godfred-adams/JS-Stopwatch/assets/128249579/9e892a22-32a9-41cf-8eda-5af1a97780ca
-
 # How to run this project on your PC
 
 1. Clone this repository using  the command
