@@ -25,7 +25,7 @@ function displayTime() {
 startButtonElement.addEventListener('click', () => {
   if(startButtonElement.innerText === 'Start') {
     startButtonElement.innerHTML = 'Stop';
-    resetButtonElement.innerHTML = 'Lap';
+    // resetButtonElement.innerHTML = 'Lap';
     startTimer();
   } 
   else if(startButtonElement.innerText === 'Stop') {
@@ -36,27 +36,35 @@ startButtonElement.addEventListener('click', () => {
   } 
   else if(startButtonElement.innerText === 'Resume') {
     startButtonElement.innerHTML = 'Stop';
-    resetButtonElement.innerHTML = 'Lap';
+    // resetButtonElement.innerHTML = 'Lap';
     startTimer();
   }
 });
 
 resetButtonElement.addEventListener('click', () => {
-  if(resetButtonElement.innerText === 'Lap'){
-    lapButtonElement.classList.add('js-show-lap');
-    lappedTime.push({
-      minute,
-      seconds,
-      milliseconds
-    });
-    // localStorage.setItem('laps', JSON.stringify(lappedTime));
-  } 
+  // if(resetButtonElement.innerText === 'Lap'){
+  //   lapButtonElement.classList.add('js-show-lap');
+  //   lappedTime.push({
+  //     minute,
+  //     seconds,
+  //     milliseconds
+  //   });
+  //   // localStorage.setItem('laps', JSON.stringify(lappedTime));
+  // } 
+  let timeoutId;
+  if(startButtonElement.innerText === 'Stop') {
+    stopTimer();
+    timeoutId = setTimeout(() => {
+      resetTimer();
+      clearTimeout(timeoutId);
+    }, 500);
+  }
   else {
-    lapButtonElement.classList.remove('js-show-lap');
-    lappedTime.forEach((index) => {
-      lappedTime.splice(index);
-    });
-    displayingLapElement.classList.remove('active');
+    // lapButtonElement.classList.remove('js-show-lap');
+    // lappedTime.forEach((index) => {
+    //   lappedTime.splice(index);
+    // });
+    // displayingLapElement.classList.remove('active');
     resetTimer();
   }
 });
