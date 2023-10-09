@@ -9,7 +9,7 @@ let milliseconds = 0;
 
 displayTime();
 
-// Setting the minute seconds and milliseconds variables to 0 
+// Function for displaing the time
 function displayTime() {
   timeElement.innerHTML = `
     <p>${minute.toString().padStart(2,'0')} : ${seconds.toString().padStart(2,'0')} .
@@ -18,6 +18,7 @@ function displayTime() {
   `;
 }
 
+// Onclick evenlisteners for the buttons in the html page
 startButtonElement.addEventListener('click', () => {
   if(startButtonElement.innerHTML === 'Start') {
     startTimer();
@@ -45,7 +46,6 @@ resetButtonElement.addEventListener('click', () => {
     resetTimer();
   }
 });
-
 
 // fnctions for start, stop, resume and reset buttons
 // Settining a variable to store interval Id
