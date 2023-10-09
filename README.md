@@ -24,7 +24,7 @@ OR
 1. Click the "Code" button above
 2. Click on "Download Zip" from the popup menu.
 3. Extract the file
-4. Open with your preferred IDE
+4. Open the folder with your preferred IDE
 5. Run the HTML file with live server
 
 # How to tweak this project for your own use.
