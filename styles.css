@@ -3,6 +3,7 @@
   --start-btn-color: rgb(17, 136, 19);
   --stop-btn-color: red;
   --reset-btn-color: rgb(144, 144, 6);
+  --lap-btn-color: rgb(3, 52, 158);
 }
 
 * {
@@ -75,10 +76,66 @@ button:hover {
   background-color: var(--reset-btn-color);
 }
 
+.js-lap-btn {
+  background-color: var(--lap-btn-color);
+  display: none;
+}
+
+.js-show-lap {
+  display: inline;
+}
+
 .js-milli {
   font-size: 2rem;
 }
 
+.js-lap-container{
+  display: none;
+}
+
+.js-lap-container.active {
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.display-lap {
+  background-color: white;
+  width: 30%;
+  height: 60%;
+  margin: 120px auto;
+  border-radius: 10px;
+}
+
+.display-lap p {
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.headings p {
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  margin: 10px 40px;
+}
+
+.laps p {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.laps p span{
+  color: black;
+  margin: 10px 47px;
+  padding-left: -25px;
+}
 
 /* Setting meddia screens */
 
