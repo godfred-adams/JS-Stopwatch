@@ -1,0 +1,100 @@
+:root {
+  --background-color: rgb(3, 3, 5);
+  --start-btn-color: rgb(17, 136, 19);
+  --stop-btn-color: red;
+  --reset-btn-color: rgb(144, 144, 6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI';
+  color: white;
+}
+
+body {
+  background-color: var(--background-color);
+  color: white; 
+}
+
+.main-container,
+.time-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 30px auto;
+  text-align: center;
+  cursor: pointer;
+  border: 5px solid white;
+  width: 25rem;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.time-container {
+  border: 5px double white;
+  height: 300px;
+  width: 300px;
+  border-radius: 50px;
+  margin: 60px auto;
+  font-size: 3rem;
+}
+
+button {
+  border: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  margin: auto 15px;
+  cursor: pointer;
+  transition: 0.3s linear;
+  border-radius: 5px;
+}
+
+button:hover {
+  transform: scale(0.98);
+}
+
+.js-start-btn {
+  background-color: var(--start-btn-color);
+}
+
+.js-stop-btn {
+  background-color: var(--stop-btn-color);
+}
+
+.js-reset-btn{
+  background-color: var(--reset-btn-color);
+}
+
+.js-milli {
+  font-size: 2rem;
+}
+
+
+/* Setting meddia screens */
+
+@media (max-width: 800px) {
+  h1 {
+    margin: 50px auto;
+    width: 320px;
+  }
+
+  .time-container {
+    height: 250px;
+    margin-top: 30px;
+  }
+
+  button{
+    min-width: 120px;
+    min-height: 70px;
+  }
+}
