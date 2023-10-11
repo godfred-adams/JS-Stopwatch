@@ -20,8 +20,17 @@ body {
   color: white; 
 }
 
+.clock {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
 .main-container,
-.time-container {
+.time-container,
+.info {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,6 +145,14 @@ button:hover {
   color: black;
   margin: 10px 47px;
   padding-left: -25px;
+}
+
+.info {
+  margin-top: 50px;
+}
+
+.info a {
+  color: orange;
 }
 
 /* Setting meddia screens */
